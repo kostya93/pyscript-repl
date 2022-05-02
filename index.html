@@ -1,0 +1,18 @@
+<html>
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <py-env>
+        - numpy
+        - pandas
+        - matplotlib
+    </py-env>
+    <body>
+        <div id="loading">loading...⏳</div>
+        <py-script>print('ready ✔️')</py-script>
+        <py-repl id="my-repl" std-err="err-div" auto-generate="true">
+import numpy as np
+import pandas as pd</py-repl>
+        <footer id="err-div">
+        </footer>
+    </body>
+</html>
